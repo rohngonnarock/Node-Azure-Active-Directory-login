@@ -1,15 +1,19 @@
 ---
 page_type: sample
 languages:
-- javascript
-- html
+  - javascript
+  - html
 products:
-- microsoft-identity-platform
-- azure-active-directory-v2
-- ms-graph
+  - microsoft-identity-platform
+  - azure-active-directory-v2
+  - ms-graph
 description: "A simple JavaScript single-page application calling Microsoft Graph API using msal.js (w/ AAD v2 endpoint)"
 urlFragment: "active-directory-javascript-graphapi-v2"
 ---
+
+# Documentation
+
+https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-v2-javascript
 
 # MSAL JavaScript Single-page Application using Implicit Flow
 
@@ -21,26 +25,26 @@ A simple vanilla JavaScript single-page application which demonstrates how to co
 
 ## Contents
 
-| File/folder       | Description                                |
-|-------------------|--------------------------------------------|
+| File/folder          | Description                                                                          |
+| -------------------- | ------------------------------------------------------------------------------------ |
 | `AppCreationScripts` | Contains automation scripts for Powershell users (can be safely removed if desired). |
-| `JavaScriptSPA`   | Contains sample source files.              |
-| `authPopup.js`    | Main authentication logic resides here (using Popup flow). |
-| `authRedirect.js` | Use this instead of `authPopup.js` for authentication with redirect flow. |
-| `authConfig.js`   | Contains configuration parameters for the sample. |
-| `graph.js`        | Provides a helper function for calling MS Graph API. |
-| `graphConfig.js`  | Contains API endpoints for MS Graph.       |
-| `ui.js`           | Contains UI logic.                         |
-| `index.html`      |  Contains the UI of the sample.            |
-| `.gitignore`      | Defines what to ignore at commit time.     |
-| `CHANGELOG.md`    | List of changes to the sample.             |
-| `CODE_OF_CONDUCT.md` | Code of Conduct information.            |
-| `CONTRIBUTING.md` | Guidelines for contributing to the sample. |
-| `LICENSE`         | The license for the sample.                |
-| `package.json`    | Package manifest for npm.                  |
-| `README.md`       | This README file.                          |
-| `SECURITY.md`     | Security disclosures.                      |
-| `server.js`       | Implements a simple Node server to serve index.html.  |
+| `JavaScriptSPA`      | Contains sample source files.                                                        |
+| `authPopup.js`       | Main authentication logic resides here (using Popup flow).                           |
+| `authRedirect.js`    | Use this instead of `authPopup.js` for authentication with redirect flow.            |
+| `authConfig.js`      | Contains configuration parameters for the sample.                                    |
+| `graph.js`           | Provides a helper function for calling MS Graph API.                                 |
+| `graphConfig.js`     | Contains API endpoints for MS Graph.                                                 |
+| `ui.js`              | Contains UI logic.                                                                   |
+| `index.html`         | Contains the UI of the sample.                                                       |
+| `.gitignore`         | Defines what to ignore at commit time.                                               |
+| `CHANGELOG.md`       | List of changes to the sample.                                                       |
+| `CODE_OF_CONDUCT.md` | Code of Conduct information.                                                         |
+| `CONTRIBUTING.md`    | Guidelines for contributing to the sample.                                           |
+| `LICENSE`            | The license for the sample.                                                          |
+| `package.json`       | Package manifest for npm.                                                            |
+| `README.md`          | This README file.                                                                    |
+| `SECURITY.md`        | Security disclosures.                                                                |
+| `server.js`          | Implements a simple Node server to serve index.html.                                 |
 
 ## Prerequisites
 
@@ -58,7 +62,7 @@ A simple vanilla JavaScript single-page application which demonstrates how to co
 1. Configure authentication and authorization parameters:
    1. Open `authConfig.js`
    2. Replace the string `"Enter_the_Application_Id_Here"` with your app/client ID on AAD Portal.
-   3. Replace the string `"Enter_the_Cloud_Instance_Id_HereEnter_the_Tenant_Info_Here"` with `"https://login.microsoftonline.com/common/"` (*note*: This is for multi-tenant applications located on the global Azure cloud. For more information, see the [documentation](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-v2-javascript)).
+   3. Replace the string `"Enter_the_Cloud_Instance_Id_HereEnter_the_Tenant_Info_Here"` with `"https://login.microsoftonline.com/common/"` (_note_: This is for multi-tenant applications located on the global Azure cloud. For more information, see the [documentation](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-v2-javascript)).
    4. Replace the string `"Enter_the_Redirect_Uri_Here"` with the redirect uri you setup on AAD Portal.
 2. Configure the parameters for calling MS Graph API:
    1. Open `graphConfig.js`.
@@ -71,12 +75,12 @@ A simple vanilla JavaScript single-page application which demonstrates how to co
 
 This sample demonstrates the following MSAL workflows:
 
-* How to configure application parameters.
-* How to sign-in with popup and redirect methods.
-* How to sign-out.
-* How to get user consent incrementally.
-* How to acquire an access token.
-* How to make an API call with the access token.
+- How to configure application parameters.
+- How to sign-in with popup and redirect methods.
+- How to sign-out.
+- How to get user consent incrementally.
+- How to acquire an access token.
+- How to make an API call with the access token.
 
 ## Contributing
 
